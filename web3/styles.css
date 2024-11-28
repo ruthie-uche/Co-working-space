@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.booking-section, .dashboard-section {
+  margin-bottom: 2rem;
+}
+
+.desk-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.desk {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.desk.booked {
+  background-color: #f88;
+  cursor: not-allowed;
+}
+
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .desk-container {
+    justify-content: center;
+  }
+
+  .desk {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  button {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .dashboard-section {
+    font-size: 0.9rem;
+  }
+}

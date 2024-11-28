@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-working Space Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Co-working Space Booking System</h1>
+  </header>
+
+  <main>
+    <!-- booking section -->
+    <section class="booking-section">
+      <h2>Book a Desk</h2>
+      <div class="desk-container">
+        
+      </div>
+      <form id="booking-form">
+        <label for="desk-number">Desk Number:</label>
+        <input type="number" id="desk-number" name="desk-number" min="1" max="15" required>
+
+        <label for="membership-tier">Membership Tier:</label>
+        <select id="membership-tier" name="membership-tier" required>
+          <option value="basic">Basic - $10/hour</option>
+          <option value="premium">Premium - $15/hour</option>
+          <option value="executive">Executive - $20/hour</option>
+        </select>
+
+        <label for="hours">Hours:</label>
+        <input type="number" id="hours" name="hours" min="1" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+      <p id="total-charge">Total Charge: $0</p>
+    </section>
+
+    <!-- dashboard section -->
+    <section class="dashboard-section">
+      <h2>Revenue Dashboard</h2>
+      <ul id="revenue-dashboard">
+        <li>Basic Revenue: $0</li>
+        <li>Premium Revenue: $0</li>
+        <li>Executive Revenue: $0</li>
+        <li>Total Revenue: $0</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
